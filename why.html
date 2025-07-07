@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <meta name="description" content="Discover why we built NZ Grocery Saver - a tool to help Kiwi families save money and reduce stress at the checkout.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why We Built NZGrocerySaver</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Why We Built NZ Grocery Saver">
+  <meta property="og:description" content="An app to help Kiwi families save money on groceries. Learn why we built it.">
+  <meta property="og:image" content="https://yomikohara.github.io/NzGrocerySaver/images/icon.png">
+  <meta property="og:url" content="https://yomikohara.github.io/NzGrocerySaver/why.html">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #00a76f;
+      --primary-dark: #007b55;
+      --secondary: #e8f5e9; /* Very light green/off-white */
+      --accent: #81c784; /* A brighter, but still soft, green */
+      --text: #212121; /* Darker text for better contrast */
+      --bg: #ffffff; /* Pure white background for main content */
+      --bg-light: #f7fcf7; /* Very light background for footer/subtle sections */
+      --shadow-light: rgba(0, 0, 0, 0.08);
+      --shadow-medium: rgba(0, 0, 0, 0.12);
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light); /* Lighter background for the whole page */
+      color: var(--text);
+      line-height: 1.6; /* Slightly reduced for modern look */
+      padding: 0;
+      margin: 0;
+      font-weight: 400; /* Default font weight */
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark)); /* Smoother gradient */
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem 3rem; /* Adjusted padding */
+      /*border-bottom-left-radius: 2.5rem;  More rounded corners */
+      /*border-bottom-right-radius: 2.5rem;*/
+      box-shadow: 0 10px 30px var(--shadow-medium); /* Softer, larger shadow */
+      position: relative;
+      overflow: hidden; /* To contain potential background elements */
+    }
+
+    .header-image {
+      padding-right: 0;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px; /* adjust as needed */
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .header-image {
+        margin-bottom: 1rem;
+      }
+      .header-image img {
+        max-width: 120px; /* adjust this value for desired size */
+        height: auto;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .container {
+        margin: -1.5rem auto 0;
+        padding: 2.5rem 1rem;
+      }
+      .container > p {
+        font-size: 1rem;
+      }
+      .story {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+      .story h3 {
+        font-size: 1.3rem;
+      }
+      .cta p {
+        font-size: 1.3rem;
+      }
+      .cta a {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+    }
+    
+    header h1 {
+      font-size: 3.2rem; /* Slightly larger heading */
+      font-weight: 700;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.2;
+      position: relative; /* For z-index if needed */
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 900px; /* Slightly narrower container for better readability */
+      margin: -2rem auto 0; /* Pull up into the header a bit for flow */
+      padding: 3.5rem 1.5rem;
+      background-color: var(--bg);
+      border-radius: 1.5rem; /* Rounded container */
+      box-shadow: 0 12px 30px var(--shadow-light); /* Subtle shadow for the container */
+      position: relative;
+      z-index: 2;
+    }
+
+    .container > p {
+      font-size: 1.15rem; /* Slightly smaller for better text flow */
+      margin-bottom: 1.5rem;
+      color: #424242; /* Softer dark grey */
+      font-weight: 300; /* Lighter font weight for body text */
+    }
+
+    .container > p a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .container > p a:hover {
+        color: var(--accent);
+    }
+
+    .story {
+      background: var(--secondary);
+      border-radius: 1.25rem; /* More rounded */
+      padding: 2rem 2.5rem; /* More horizontal padding */
+      margin: 2rem 0; /* Slightly less vertical margin */
+      box-shadow: 0 6px 18px var(--shadow-light); /* Softer shadow */
+      border-left: 8px solid var(--primary); /* Solid, slightly bolder border */
+      overflow: hidden;
+      position: relative;
+
+      /* Initial state for fade-in effect */
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .story.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .story h3 {
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+      font-size: 1.5rem; /* Slightly larger */
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .story p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 5rem 0 3rem;
+      padding: 1.5rem;
+      background-color: var(--secondary);
+      border-radius: 1.5rem;
+    }
+
+    .cta p {
+      font-size: 1.6rem; /* Larger and more prominent */
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: var(--primary); /* Match primary color */
+      line-height: 1.3;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 1.2rem 3rem; /* More padding for a bolder button */
+      border-radius: 2.5rem; /* Pill-shaped button */
+      font-size: 1.2rem; /* Larger font size */
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 25px var(--shadow-medium);
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+      /* Pulse animation */
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    .cta a:hover {
+      background-color: #2e7d32; /* Slightly darker green on hover */
+      transform: translateY(-3px) scale(1.02); /* Subtle lift and slightly larger */
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+      animation: none; /* Stop pulsing on hover */
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.015); box-shadow: 0 10px 30px rgba(0,0,0,0.18); }
+      100% { transform: scale(1); }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #757575; /* Softer grey */
+      padding: 2.5rem 1rem;
+      border-top: 1px solid #eee;
+      background-color: var(--bg-light);
+      margin-top: 3rem; /* Space above footer */
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .container {
+        margin: -1.5rem auto 0;
+        padding: 2.5rem 1rem;
+      }
+      .container > p {
+        font-size: 1rem;
+      }
+      .story {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+      .story h3 {
+        font-size: 1.3rem;
+      }
+      .cta p {
+        font-size: 1.3rem;
+      }
+      .cta a {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 4rem 1rem 2.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 2rem 1rem;
+      }
+      .story {
+        padding: 1.2rem;
+      }
+      .cta {
+        margin: 4rem 0 2rem;
+      }
+      .cta p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+      .cta a {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "NZ Grocery Saver",
+    "operatingSystem": "ANDROID, iOS",
+    "applicationCategory": "ShoppingApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.99",
+      "priceCurrency": "NZD"
+    },
+    "description": "A grocery savings app built with care to help New Zealand families find the best prices across supermarkets and save more."
+    "applicationPlatform": [
+      "Google Play",
+      "iOS"
+    ]
+  }
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-image">
+        <img src="images/icon.png" alt="Groceries shopping illustration">
+      </div>
+      <h1>Helping Kiwis Save More, Live Better</h1>
+    </div>
+  </header>
+  <div class="container">
+    <p>
+      At the heart of our app is a simple mission: to help everyday New Zealanders make smarter choices and save money on groceries.
+      For many of us, the rising cost of living isn't just a headline-it's something we feel every week at the checkout.
+      In fact, <a href="https://tradingeconomics.com/new-zealand/food-inflation" target="_blank" rel="noopener noreferrer">New Zealand's food inflation</a> has remained high, putting extra pressure on households everywhere.
+    </p>
+    <p>
+      This app was born from a deep desire to bring real, practical support to whānau across Aotearoa.
+      We believe that by making informed choices and sharing resources-like this helpful guide on <a href="https://www.moneyhub.co.nz/how-to-save-money-on-food.html" target="_blank" rel="noopener noreferrer">how to save money on food</a>-we can lighten the load for each other.
+      Whether you're a student trying to stretch your budget, a parent planning meals for your tamariki, or a retiree watching every dollar-we're here for you.
+    </p>
+    <p>
+      We also know that food prices aren't a short-term issue. Over the last decade, staples like beef, lamb, and milk have steadily risen in cost.
+      You can see the trend yourself in <a href="https://beeflambnz.com/industry-data/farm-data-and-industry-production/price-trend-graphs" target="_blank" rel="noopener noreferrer">this 10-year price data</a> from Beef + Lamb NZ.
+    </p>
+    <p>
+      We built this app with care, for our communities. It's more than a savings tool-it's a small act of aroha in your pocket.
+    </p>
+
+    <div class="story">
+      <h3>"I used to check four supermarkets just to keep within budget." - Aroha, single mum, Hamilton</h3>
+      <p>Every week, Aroha would spend hours flipping between store flyers and websites, trying to plan meals that wouldn't break the bank. With three kids and only one income, the pressure was constant. Our app helped her save time and money, giving her more moments with her tamariki.</p>
+    </div>
+
+    <div class="story">
+      <h3>"Even just saving $10 a week means I can treat myself to a flat white again." - Tom, retiree, Dunedin</h3>
+      <p>Tom didn't need anything fancy-just a simple way to find the best deals. With our app, he gets the best prices on essentials and enjoys a little luxury now and then.</p>
+    </div>
+
+    <div class="story">
+      <h3>"We stopped fighting about grocery costs." - Priya and Daniel, Auckland</h3>
+      <p>Between full-time work and raising kids, grocery shopping was a source of stress. Now they plan together using the app and save more each week-bringing peace of mind to their household.</p>
+    </div>
+
+    <div class="cta">
+      <p><strong>We built this app for Aroha. For Tom. For Priya and Daniel. For our kids. And for you.</strong></p>
+      <p><a href="https://yomikohara.github.io/NzGrocerySaver/index.html#download-section">Start Saving Today</a></p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 NZGrocerySaver. Proudly built for Kiwi families.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const storyElements = document.querySelectorAll('.story');
+
+      const observerOptions = {
+        root: null, /* relative to the viewport */
+        rootMargin: '0px',
+        threshold: 0.2 /* 20% of the item must be visible */
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target); /* Stop observing once animated */
+          }
+        });
+      }, observerOptions);
+
+      storyElements.forEach(story => {
+        observer.observe(story);
+      });
+    });
+  </script>
+</body>
+</html>

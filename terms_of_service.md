@@ -3,7 +3,7 @@
 **Effective Date:** [30/04/2025]  
 **Last Updated:** [30/04/2025]
 
-Welcome to **NzGrocerySaver** (“the App”), owned and operated by [**LCH Team**] (“we”, “us”, or “our”). These **Terms of Service** (“Terms”) govern your access to and use of the NzGrocerySaver mobile application, website, and related services (collectively, the “Service”).
+Welcome to **NzGrocerySaverLite** (“the App”), owned and operated by [**LCH Team**] (“we”, “us”, or “our”). These **Terms of Service** (“Terms”) govern your access to and use of the NzGrocerySaverLite mobile application, website, and related services (collectively, the “Service”).
 
 By using the App, you agree to be legally bound by these Terms.
 **If you do not agree, you must not use the App**.
@@ -12,7 +12,7 @@ By using the App, you agree to be legally bound by these Terms.
 
 ## 1. Description of the Service
 
-NzGrocerySaver helps users in New Zealand compare grocery prices across supported supermarkets. Features include:
+NzGrocerySaverLite helps users in New Zealand compare grocery prices across supported supermarkets. Features include:
 
 - Price comparison
 - Shopping list management  
@@ -76,7 +76,7 @@ We reserve the right to suspend access at any time.
 
 ## 7. Privacy and Data
 
-We collect and process limited user data as per our [Privacy Policy](https://yomikohara.github.io/NzGrocerySaver/privacy_policy.html).
+We collect and process limited user data as per our [Privacy Policy](https://yomikohara.github.io/NzGrocerySaverLite/privacy_policy.html).
 
 ---
 

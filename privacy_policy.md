@@ -1,14 +1,14 @@
-# Privacy Policy for NzGrocerySaver
+# Privacy Policy for NzGrocerySaverLite
 
 **Last Updated: April 18, 2025**
 
-NzGrocerySaver is committed to protecting your privacy. This Privacy Policy explains what information we do — and more importantly, do **not** — collect, and how your data is handled when you use the app.
+NzGrocerySaverLite is committed to protecting your privacy. This Privacy Policy explains what information we do — and more importantly, do **not** — collect, and how your data is handled when you use the app.
 
 ---
 
 ## 1. Information We Do Not Collect
 
-NzGrocerySaver is designed with your privacy in mind. We **do not collect, store, or share** any personal or sensitive information. Specifically, the app does **not** collect:
+NzGrocerySaverLite is designed with your privacy in mind. We **do not collect, store, or share** any personal or sensitive information. Specifically, the app does **not** collect:
 
 - Your name, email address, or any other identifying information  
 - Your location, IP address, or device identifiers (other than what is required for standard internet communication)  
@@ -20,7 +20,7 @@ You can use the app fully without creating an account or providing any personal 
 
 ## 2. Internet Access
 
-NzGrocerySaver requires internet access **solely** to retrieve up-to-date grocery pricing information.  
+NzGrocerySaverLite requires internet access **solely** to retrieve up-to-date grocery pricing information.  
 No user-specific data is transmitted, logged, or shared with any external servers or services.
 
 ---

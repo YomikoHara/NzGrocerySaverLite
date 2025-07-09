@@ -15,6 +15,7 @@
     :root {
       --primary: #00a76f;
       --primary-dark: #007b55;
+      --primary-yomiko: #000000;
       --primary-light: #5be49b;
       --secondary: #ffab00;
       --dark: #212b36;
@@ -216,6 +217,12 @@
     }
     .btn-primary:hover {
       background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 167, 111, 0.3);
+    }
+
+    .btn-yomiko:hover {
+      background: var(--primary-yomiko);
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 167, 111, 0.3);
     }
@@ -537,8 +544,10 @@
       <p>Enjoy smart shopping without paying a cent. Ads support this version to keep it free for everyone.</p>
       <div class="cta-buttons" style="margin-top: 2rem;">
         <a href="#download-section" class="btn btn-primary">Get NZGrocerySaverLite</a>
+        <a href="https://yomikohara.github.io/NzGrocerySaver/index.html#download-section" class="btn btn-yomiko" style="margin-left: 1rem;">Upgrade to Pro</a>
       </div>
     </div>
+
 
     <section class="animate">
       <h2 class="text-center">Get In Touch</h2>

@@ -27,20 +27,7 @@ You must be at least 17 years old.
 
 ---
 
-## 3. Subscriptions and Payment
-
-Subscriptions are handled through the Apple App Store or Google Play. 
-You agree to:
-- Pay all applicable fees and taxes on time.
-- Comply with the respective app store’s billing policies.
-  
-**No refunds** will be issued by us (subject to applicable consumer laws).
-
-**Auto-renewal**: Subscriptions may renew automatically unless canceled **at least 24 hours before** the renewal date.
-
----
-
-## 4. License and Intellectual Property
+## 3. License and Intellectual Property
 
 We grant you a limited, non-exclusive, revocable, non-transferable license to use the App for personal, non-commercial purposes.
 
@@ -54,7 +41,7 @@ All trademarks, logos, and content remain our exclusive property.
 
 ---
 
-## 5. Data Accuracy Disclaimer
+## 4. Data Accuracy Disclaimer
 
 While we strive for accuracy, we do not guarantee that all prices, product availability, or store locations are up-to-date or error-free.
 
@@ -62,7 +49,7 @@ Use at your own risk—we are not liable for discrepancies or reliance on App da
 
 ---
 
-## 6. User Conduct
+## 5. User Conduct
 
 You agree to:
 
@@ -74,13 +61,13 @@ We reserve the right to suspend access at any time.
 
 ---
 
-## 7. Privacy and Data
+## 6. Privacy and Data
 
 We collect and process limited user data as per our [Privacy Policy](https://yomikohara.github.io/NzGrocerySaverLite/privacy_policy.html).
 
 ---
 
-## 8. Disclaimer of Warranties
+## 7. Disclaimer of Warranties
 
 The App is provided **“AS IS”** and **“AS AVAILABLE”** without warranties of:
 
@@ -90,7 +77,7 @@ The App is provided **“AS IS”** and **“AS AVAILABLE”** without warrantie
 
 ---
 
-## 9. Limitation of Liability
+## 8. Limitation of Liability
 
 We are not liable for:
 
@@ -103,19 +90,19 @@ Your sole remedy is to discontinue using the App.
 
 ---
 
-## 10. Indemnification
+## 9. Indemnification
 
 You agree to indemnify and hold us harmless from any claims, damages, or losses arising from your use or violation of these Terms.
 
 ---
 
-## 11. Modifications to Terms
+## 10. Modifications to Terms
 
 We may revise these Terms. Continued use constitutes acceptance of any changes.
 
 ---
 
-## 12. Governing Law
+## 11. Governing Law
 
 These Terms are governed by the laws of New Zealand, excluding its conflict-of-law principles.  
 
@@ -125,6 +112,6 @@ You agree that any dispute arising from or related to the use of the App will be
 
 ---
 
-## 13. Contact
+## 12. Contact
 
 📧 **Email:** [yomik.hara@gmail.com]

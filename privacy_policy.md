@@ -39,6 +39,13 @@ We encourage you to review the privacy policies of these third-party services to
 
 You can opt out of personalized ads by adjusting your device's privacy settings.
 
+You can control how Google uses your data for personalized ads by adjusting your device settings:
+
+- On Android, go to **Settings > Google > Ads > Opt out of Ads Personalization**.
+- For more details, visit [Google Ads Settings](https://www.google.com/settings/ads).
+
+Note: Disabling personalized ads does not remove ads from the app but will make them less relevant.
+
 ---
 
 ## 4. Changes to This Policy

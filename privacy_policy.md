@@ -42,13 +42,19 @@ You can opt out of personalized ads by adjusting your device's privacy settings.
 You can control how Google uses your data for personalized ads by adjusting your device settings:
 
 - On Android, go to **Settings > Google > Ads > Opt out of Ads Personalization**.
+- On iOS: **Settings → Privacy → Tracking → Disable “Allow Apps to Request to Track” or adjust app-specific permissions**.
 - For more details, visit [Google Ads Settings](https://www.google.com/settings/ads).
 
 Note: Disabling personalized ads does not remove ads from the app but will make them less relevant.
 
 ---
 
-## 4. Changes to This Policy
+## 4. App Tracking Transparency (iOS)
+In compliance with Apple’s App Tracking Transparency (ATT) framework, iOS users will be prompted to grant or deny permission for tracking. Tracking is only used for delivering more relevant advertisements. Declining tracking does not affect your ability to use the app.
+
+---
+
+## 5. Changes to This Policy
 
 We may update this Privacy Policy to reflect changes in the app or to comply with legal requirements.  
 Any updates will be published here with a revised "Last Updated" date.  
@@ -56,7 +62,7 @@ By continuing to use the app after changes are made, you agree to the updated po
 
 ---
 
-## 5. Contact Us
+## 6. Contact Us
 
 If you have any questions or concerns about this Privacy Policy, feel free to contact us at:  
 📧 **yomik.hara@gmail.com**
